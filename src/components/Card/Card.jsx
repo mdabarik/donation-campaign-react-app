@@ -6,7 +6,7 @@ const Card = ({card}) => {
     const navigate = useNavigate();
 
     const handleCardClick = () => {
-        navigate(`/`)
+        navigate(`/${id}`)
     }
 
     return (
