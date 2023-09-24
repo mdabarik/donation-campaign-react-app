@@ -1,14 +1,19 @@
 import { useLoaderData } from "react-router-dom";
 import Cards from "../../components/Cards/Cards";
-import Header from "../../components/Header/Header";
+import Banner from "../../components/Banner/Banner";
 
 const Home = () => {
 
     const cards = useLoaderData();
 
     return (
-        <div className="container mx-auto">
-            <Cards cards={cards}></Cards>
+        <div>
+            <div>
+                <Banner></Banner>
+            </div>
+            <div>
+                <Cards cards={cards}></Cards>
+            </div>
         </div>
     );
 };
