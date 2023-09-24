@@ -1,10 +1,7 @@
 
 const Card = ({card}) => {
-
     const {id, title, category, picture, color_cat_bg, color_card_bg, color_text_button} = card;
-    console.log(color_card_bg);
 
-    console.log(card);
     return (
         <div className='border border-blue-300 rounded-lg'>
             <div className='h-[180px] border border-gray-800'>

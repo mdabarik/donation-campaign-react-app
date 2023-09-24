@@ -1,4 +1,3 @@
-import Banner from "../Banner/Banner";
 import Logo from "../Logo/Logo";
 import NavBar from "../NavBar/NavBar";
 
