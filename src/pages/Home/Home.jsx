@@ -8,7 +8,6 @@ const Home = () => {
 
     return (
         <div className="container mx-auto">
-            <Header></Header>
             <Cards cards={cards}></Cards>
         </div>
     );
