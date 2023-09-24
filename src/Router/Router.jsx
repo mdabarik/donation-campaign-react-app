@@ -4,6 +4,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import MainLayout from "../layout/MainLayout";
 import Statistics from "../components/Statistics/Statistics";
 import Donation from "../components/Donation/Donation";
+import CardDetails from "../components/CardDetails/CardDetails";
 
 const myCreatedRouter = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const myCreatedRouter = createBrowserRouter([
                 path: '/',
                 loader: () => fetch('campaigns.json'),
                 element: <Home></Home>
+            },
+            {
+                path: '/:id',
+                element: <CardDetails></CardDetails>
             },
             {
                 path: '/donation',

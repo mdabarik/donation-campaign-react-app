@@ -1,9 +1,16 @@
+import { useNavigate } from "react-router-dom";
 
 const Card = ({card}) => {
     const {id, title, category, picture, color_cat_bg, color_card_bg, color_text_button} = card;
 
+    const navigate = useNavigate();
+
+    const handleCardClick = () => {
+        navigate(`/`)
+    }
+
     return (
-        <div className='rounded-lg'>
+        <div className='rounded-lg' onClick={handleCardClick}>
             <div className='h-[180px]'>
                 <img className='w-full h-full rounded-t-lg' src={picture}/>
             </div>
