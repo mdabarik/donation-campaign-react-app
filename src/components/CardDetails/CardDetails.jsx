@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const CardDetails = () => {
     const cards = useLoaderData();
@@ -18,6 +19,11 @@ const CardDetails = () => {
             const cardsStringified = JSON.stringify(newCards);
             localStorage.setItem('donate', cardsStringified);
         }
+        Swal.fire(
+            'Good job!',
+            'Your donation was successfull!',
+            'success'
+        ) 
     }
 
     return (

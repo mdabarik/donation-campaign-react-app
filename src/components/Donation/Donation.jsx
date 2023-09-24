@@ -28,7 +28,6 @@ const Donation = () => {
         setDisplayCards(display);
     }, [cardIds, cards])
 
-    console.log(displayCards);
 
     return (
         <div className="mx-auto flex flex-col items-center justify-center mb-10">
