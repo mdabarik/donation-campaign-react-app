@@ -3,13 +3,13 @@ const Card = ({card}) => {
     const {id, title, category, picture, color_cat_bg, color_card_bg, color_text_button} = card;
 
     return (
-        <div className='border border-blue-300 rounded-lg'>
-            <div className='h-[180px] border border-gray-800'>
-                <img className='w-full h-full' src={picture}/>
+        <div className='rounded-lg'>
+            <div className='h-[180px]'>
+                <img className='w-full h-full rounded-t-lg' src={picture}/>
             </div>
-            <div style={{background: color_card_bg, color: color_text_button}} className={`border border-red-500 bg-[${color_card_bg}]`}>
-                <p style={{background: color_cat_bg}}>{category}</p>
-                <h2>{title}</h2>
+            <div style={{background: color_card_bg, color: color_text_button}} className={`bg-[${color_card_bg}] rounded-b-lg p-4`}>
+                <p className="py-1 rounded-md mb-1 px-3 w-fit" style={{background: color_cat_bg, color:color_text_button}}>{category}</p>
+                <h2 className="text-[20px] font-bold" style={{color:color_text_button}}>{title}</h2>
             </div>
         </div>
     );
