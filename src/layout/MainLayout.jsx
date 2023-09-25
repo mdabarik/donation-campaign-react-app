@@ -12,3 +12,5 @@ const MainLayout = () => {
 };
 
 export default MainLayout;
+
+// w-[90%] md:w-[100vw]]
