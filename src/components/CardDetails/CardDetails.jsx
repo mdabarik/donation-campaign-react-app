@@ -15,6 +15,14 @@ const CardDetails = () => {
             localStorage.setItem('donate', cardsStringified);
         } else {
             const newCards = [...JSON.parse(storedCards)];
+            if (newCards.includes(id)) {
+                Swal.fire(
+                    'Opps!',
+                    'Already added.!',
+                    'error'
+                ) 
+                return;
+            }
             newCards.push(id);
             const cardsStringified = JSON.stringify(newCards);
             localStorage.setItem('donate', cardsStringified);

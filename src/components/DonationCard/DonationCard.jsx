@@ -4,7 +4,7 @@ const DonationCard = ({ card }) => {
     return (
         <div className='flex border  rounded-lg'>
             <div className='w-[80%]'>
-                <img style={{'object-fit':'cover'}} className='h-full w-[100%]' src={card.picture} />
+                <img style={{objectFit:'cover'}} className='h-full w-[100%]' src={card.picture} />
             </div>
             <div className='flex w-[100%] flex-col items-start justify-center px-6 py-8' style={{ backgroundColor: card.color_card_bg }}>
                 <h3 className='px-3 py-1 rounded-lg' style={{ backgroundColor: card.color_cat_bg }}>{card.category}</h3>
