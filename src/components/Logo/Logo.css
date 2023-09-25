@@ -1,0 +1,29 @@
+.logo {
+    letter-spacing: 12px;
+    color: #0b0b0bb3;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .logo {
+        letter-spacing: 6px;
+        font-size: 10px;
+    }
+    .logo-img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 12px;
+        letter-spacing: 7px;
+    }
+    .logo-txt {
+    }
+}
+
+
+
