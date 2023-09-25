@@ -27,7 +27,7 @@ const Chart = () => {
 
     const getArcLabel = (params) => {
         const percent = params.value / TOTAL;
-        return `${(percent * 100).toFixed(0)}%`;
+        return `${(percent * 100).toFixed(1)}%`;
     };
 
 
