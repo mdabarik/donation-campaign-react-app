@@ -20,7 +20,7 @@ const CardDetails = () => {
                     'Opps!',
                     'Already added.!',
                     'error'
-                ) 
+                )
                 return;
             }
             newCards.push(id);
@@ -31,7 +31,7 @@ const CardDetails = () => {
             'Good job!',
             'Your donation was successfull!',
             'success'
-        ) 
+        )
     }
 
     return (
@@ -39,7 +39,7 @@ const CardDetails = () => {
             <div className="h-[600px] relative">
                 <img style={{ backgroundSize: 'cover', objectFit: 'cover' }} className="w-full h-[600px] rounded-lg" src={card.picture} />
                 <div style={{ background: 'rgba(11, 11, 11, 0.50)' }} className="absolute bottom-0 text-white w-full p-8 rounded-b-lg">
-                    <button 
+                    <button
                         onClick={() => handleDonate(card.id)}
                         style={{ background: card.color_text_button }} className="py-4 px-5 text-white font-semibold rounded-lg">Donate ${card.price}</button>
                 </div>

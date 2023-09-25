@@ -40,6 +40,17 @@ const Chart = () => {
                     arcLabel: getArcLabel,
                 },
             ]}
+            legend={{
+                direction: "col",
+                position: {
+                  vertical: "middle",
+                  horizontal: "middle"
+                }
+              }}
+              sx={{
+                "--ChartsLegend-rootOffsetX": "0px",
+                "--ChartsLegend-rootOffsetY": "200px",
+              }}
             {...sizing}
         />
     )
