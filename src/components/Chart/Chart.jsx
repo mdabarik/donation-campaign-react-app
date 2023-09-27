@@ -41,13 +41,14 @@ const Chart = () => {
                 },
             ]}
             legend={{
-                direction: "col",
+                direction: "row",
                 position: {
                   vertical: "middle",
                   horizontal: "middle"
                 }
               }}
               sx={{
+                "--ChartsLegend-itemWidth": "130px",
                 "--ChartsLegend-rootOffsetX": "0px",
                 "--ChartsLegend-rootOffsetY": "200px",
               }}
